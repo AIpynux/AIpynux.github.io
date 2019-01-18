@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>The Space of Hgneer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Improve the Speed of Git Clone from Github出现障碍更新Vim到8.1后检查插件状态，发现ale需要重新安装。 用的插件管理器是Vim-Plug，在.vimrc.bundles中添加: 1Plug &amp;apos;w0rp/ale&amp;apos; 之后在Vim中执行命令  :PlugInstall  看着屏幕上的进度条一点点地跑到终点，终端却抛来如下错误: 1234">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Space of Hgneer">
+<meta property="og:url" content="http://yoursite.com/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/index.html">
+<meta property="og:site_name" content="The Space of Hgneer">
+<meta property="og:description" content="Improve the Speed of Git Clone from Github出现障碍更新Vim到8.1后检查插件状态，发现ale需要重新安装。 用的插件管理器是Vim-Plug，在.vimrc.bundles中添加: 1Plug &amp;apos;w0rp/ale&amp;apos; 之后在Vim中执行命令  :PlugInstall  看着屏幕上的进度条一点点地跑到终点，终端却抛来如下错误: 1234">
+<meta property="og:locale" content="Chinese">
+<meta property="og:updated_time" content="2019-01-18T14:16:50.277Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Space of Hgneer">
+<meta name="twitter:description" content="Improve the Speed of Git Clone from Github出现障碍更新Vim到8.1后检查插件状态，发现ale需要重新安装。 用的插件管理器是Vim-Plug，在.vimrc.bundles中添加: 1Plug &amp;apos;w0rp/ale&amp;apos; 之后在Vim中执行命令  :PlugInstall  看着屏幕上的进度条一点点地跑到终点，终端却抛来如下错误: 1234">
+  
+    <link rel="alternate" href="/atom.xml" title="The Space of Hgneer" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">The Space of Hgneer</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">常怀敬畏之心</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Improve_the_Speed_of_Git_Clone_from_Github" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/" class="article-date">
+  <time datetime="2019-01-18T15:29:27.520Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Improve-the-Speed-of-Git-Clone-from-Github"><a href="#Improve-the-Speed-of-Git-Clone-from-Github" class="headerlink" title="Improve the Speed of Git Clone from Github"></a>Improve the Speed of Git Clone from Github</h1><h2 id="出现障碍"><a href="#出现障碍" class="headerlink" title="出现障碍"></a>出现障碍</h2><p>更新Vim到8.1后检查插件状态，发现ale需要重新安装。</p>
+<p>用的插件管理器是Vim-Plug，在.vimrc.bundles中添加:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plug &apos;w0rp/ale&apos;</span><br></pre></td></tr></table></figure>
+<p>之后在Vim中执行命令</p>
+<blockquote>
+<p>:PlugInstall</p>
+</blockquote>
+<p>看着屏幕上的进度条一点点地跑到终点，终端却抛来如下错误:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">fatal: early EOF</span><br><span class="line">fatal: index-pack failed</span><br></pre></td></tr></table></figure>
+<h2 id="分析原因"><a href="#分析原因" class="headerlink" title="分析原因"></a>分析原因</h2><p>看上诉错误的字面意思是下载的包在传输过程中提前结束。我以为凑巧出错便重新下载。</p>
+<p>经过实验多次，这样的错误发生不是偶然。之后,经过查阅文档,我发现Vim-Plug实际上采</p>
+<p>用git来下载安装Github上的插件项目。然而,国内用终端克隆Github上Repository速度特慢,</p>
+<p>猜测此次障碍可能由此造成。</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="1-为git设置代理"><a href="#1-为git设置代理" class="headerlink" title="1. 为git设置代理"></a>1. 为git设置代理</h3><p>在设置了SS代理的前提下，从终端输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:1080</span><br><span class="line">git config --global https.https://github.com.proxy socks5://127.0.0.1:1080</span><br></pre></td></tr></table></figure>
+<h3 id="2-修改Hosts"><a href="#2-修改Hosts" class="headerlink" title="2. 修改Hosts"></a>2. 修改Hosts</h3><p>用以下命令查找github.global.ssl.fastly.Net和github.com对应的IP地址:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nslookup github.global.ssl.fastly.Net</span><br><span class="line">nslookup github.com</span><br></pre></td></tr></table></figure></p>
+<p>之后将IP地址和域名对添加到/etc/hosts文件。</p>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>git clone的速度从10.0KB/s提升到150.0KB/s;出现的插件下载安装障碍得到解决。</p>
+<hr>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://blog.csdn.net/hzwwpgmwy/article/details/79043251" target="_blank" rel="noopener">git clone速度太慢解决方案</a></p>
+<p><a href="https://www.zhihu.com/question/27159393" target="_blank" rel="noopener">git clone一个github上的仓库，太慢…</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/" data-id="cjr27a2qs0000ulgmze9kon15" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/01/18/Vim无插件Markdown预览/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/18/Vim无插件Markdown预览/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/18/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/17/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 hgneer<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
