@@ -13,7 +13,7 @@
 <meta property="og:description" content="#Vim无插件实现Markdown预览 ##环境  chromium-browser Markdown Viewer Ubuntu16.04 Vim  ##步骤  确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;l">
 <meta property="og:locale" content="Chinese">
 <meta property="og:image" content="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png">
-<meta property="og:updated_time" content="2019-01-19T15:11:48.907Z">
+<meta property="og:updated_time" content="2019-01-19T15:16:09.826Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Space of Hgneer">
 <meta name="twitter:description" content="#Vim无插件实现Markdown预览 ##环境  chromium-browser Markdown Viewer Ubuntu16.04 Vim  ##步骤  确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;l">
@@ -73,7 +73,7 @@
         <section id="main"><article id="post-Vim无插件Markdown预览" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/19/Vim无插件Markdown预览/" class="article-date">
-  <time datetime="2019-01-19T15:13:52.649Z" itemprop="datePublished">2019-01-19</time>
+  <time datetime="2019-01-19T15:16:09.862Z" itemprop="datePublished">2019-01-19</time>
 </a>
     
   </div>
@@ -99,15 +99,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">nmap &lt;F4&gt; :call Preview()&lt;CR&gt;</span><br><span class="line">func! Preview()</span><br><span class="line">    if &amp;filetype == &apos;markdown.mkd&apos;</span><br><span class="line">        exec &quot;!chromium-browser %&quot;</span><br><span class="line">    endif</span><br><span class="line">endfunc</span><br></pre></td></tr></table></figure>
 <p>##效果<br>用Vim编辑Markdown文件时按F4会打开一个chromium窗口进行预览,每次保存文件时更新预览。<br><img src="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png" alt=""></p>
 <p>##注意<br>不要用Firefox，Firefox自动对离线文件的编码解析总不准确且不能修改默认的离线文件编码为Unicode，所以总是造成乱码。</p>
-<center>interesting</center>
-
 <hr>
 <p>##参考<br><a href="https://blog.csdn.net/Demorngel/article/details/72631234" target="_blank" rel="noopener">Vim无插件实现Markdown文件实时预览</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/19/Vim无插件Markdown预览/" data-id="cjr3m5n910001jpgmb2nklc93" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/19/Vim无插件Markdown预览/" data-id="cjr3m8a4b0002ztgm88ei2rjb" class="article-share-link">Share</a>
       
       
     </footer>
