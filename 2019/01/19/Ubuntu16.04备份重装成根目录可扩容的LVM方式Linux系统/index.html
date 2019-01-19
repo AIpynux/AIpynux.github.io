@@ -8,7 +8,7 @@
   <meta name="description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：  一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/ba">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Space of Hgneer">
-<meta property="og:url" content="http://yoursite.com/2019/01/18/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/index.html">
 <meta property="og:site_name" content="The Space of Hgneer">
 <meta property="og:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：  一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/ba">
 <meta property="og:locale" content="Chinese">
@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://img-blog.csdn.net/20171016164933632?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdn.net/20171017233611502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdn.net/20171016165228837?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2019-01-18T15:03:34.042Z">
+<meta property="og:updated_time" content="2019-01-19T12:49:33.966Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Space of Hgneer">
 <meta name="twitter:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：  一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/ba">
@@ -99,8 +99,8 @@
       <div class="outer">
         <section id="main"><article id="post-Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/01/18/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" class="article-date">
-  <time datetime="2019-01-18T15:29:27.520Z" itemprop="datePublished">2019-01-18</time>
+    <a href="/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" class="article-date">
+  <time datetime="2019-01-19T12:52:50.398Z" itemprop="datePublished">2019-01-19</time>
 </a>
     
   </div>
@@ -128,7 +128,7 @@
 <h3 id="五、重装系统"><a href="#五、重装系统" class="headerlink" title="五、重装系统"></a>五、重装系统</h3><p>点击桌面上的“install Ubuntu16.04.3 LTS”开始安装<br><img src="https://img-blog.csdn.net/20171016164419708?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <p><img src="https://img-blog.csdn.net/20171016164433597?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>安装时选择其他选项，自行分区选择调整。<br><img src="https://img-blog.csdn.net/20171016164454670?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>/dev/mapper/hgneer1-home分区挂载到/home目录，选中格式化成Ext4日志文件系统<br><img src="https://img-blog.csdn.net/20171016164525741?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>/dev/mapper/hgneer1-root分区挂载到/目录，选中格式化成Ext4日志文件系统<br><img src="https://img-blog.csdn.net/20171016164537913?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>/dev/mapper/hgneer1-swap分区作为swap交换空间<br><img src="https://img-blog.csdn.net/20171016164600511?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>/dev/sdb7分区挂载到/boot目录，选中格式化成Ext4日志文件系统<br><img src="https://img-blog.csdn.net/20171016164625650?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>另外注意安装启动引导器的设备选择挂载到/boot目录的/dev/sdb7，否则很可能无法引导出Linux系统！！！<br><img src="https://img-blog.csdn.net/20171017233256535?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <p>等待安装成功后，先不要重启，继续试用，看新装上的系统Ubuntu2是否使用了LVM。<br>终端输入mount /dev/mapper/hgneer-root /mnt挂载Ubuntu2的/到试用系统的/mnt。<br>终端输入mount /dev/mapper/hgneer-home /mnt/home挂载Ubuntu2的/home到试用系统的/mnt/home。<br>终端输入mount /dev/sdb7 /mnt挂载Ubuntu2的/boot到试用系统的/mnt/boot。<br>cd到上面几个目录下看下，确定不为空系统成功装上后终端输入chroot /mnt将/mnt改成根目录，而后关机。<br><img src="https://img-blog.csdn.net/20171016164820832?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<h3 id="六、恢复数据及配置"><a href="#六、恢复数据及配置" class="headerlink" title="六、恢复数据及配置"></a>六、恢复数据及配置</h3><p>重启进入Ubuntu2系统。将/etc/fstab文件及/boot目录备份到挂载了/dev/sdb1的/tmp的back文件夹中。<br>这些文件记载了Ubuntu2的启动信息以及Ubuntu2各重要目录所在的分区信息，这些文件与Ubuntu1不一样的，因此在之后解压备份文件后需要把这些文件替换到对应目录下。<br> <img src="https://img-blog.csdn.net/20171016164855568?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<h3 id="六、恢复数据及配置"><a href="#六、恢复数据及配置" class="headerlink" title="六、恢复数据及配置"></a>六、恢复数据及配置</h3><p>重启进入Ubuntu2系统。将/etc/fstab文件及/boot目录备份到挂载了/dev/sdb1的/tmp的back文件夹中。<br>这些文件记载了Ubuntu2的启动信息以及Ubuntu2各重要目录所在的分区信息，<br>这些文件与Ubuntu1不一样的因此在之后解压备份文件后需要把这些文件替换到对应目录下。<br> <img src="https://img-blog.csdn.net/20171016164855568?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <p>  重启进入liveCD（U盘启动盘试用）。照前文一样命令获取试用系统的root权限。<br>  终端输入mount /dev/mapper/hgneer-root /mnt挂载Ubuntu2的/到试用系统的/mnt。<br>  终端输入mount /dev/mapper/hgneer-home /mnt/home挂载Ubuntu2的/home到试用系统的/mnt/home。<br>  终端输入mount /dev/sdb7 /mnt/boot挂载Ubuntu2的/boot到试用系统的/mnt/boot。<br>  cd到/mnt目录后，终端输入ls | xargs rm -rf，删除Ubuntu2系统根目录下的全部目录及文件。<br>  终端输入mount /dev/sdb1 /tmp挂载D盘到/tmp目录，cd到/tmp/back后终端输入tar -xvpf back.tgz -C /mnt。<br>  最终目的将Ubuntu1的备份下数据文件解压到/mnt即Ubuntu2的根目录下。<br><img src="https://img-blog.csdn.net/20171016164921183?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <p><img src="https://img-blog.csdn.net/20171016164933632?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <p>等到解压完成后cd到/mnt后，终端输入mkdir proc lost+found tmp sys media，创建Ubuntu1备份时未选中的目录。<br>将备份在设备/dev/sdb1即现挂载在/tmp目录下的back文件夹中的fstab拷贝替换到/mnt/etc目录下。<br>将备份在设备/dev/sdb1即现挂载在/tmp目录下的back文件夹中的/boot文件夹中的文件拷贝到/mnt/boot目录下。<br>终端输入chroot /mnt转换/mnt当作根目录。<br><img src="https://img-blog.csdn.net/20171017233611502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>重启进入Ubuntu2，根目录可扩容且用户数据配置与Ubuntu1完全一致的Linux系统完成！<br><img src="https://img-blog.csdn.net/20171016165228837?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
@@ -136,7 +136,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/18/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" data-id="cjr27a2rr0003ulgmz9wf1ie9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" data-id="cjr3h7top00017qgmdrxe5drk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,19 +145,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/01/18/Vim无插件Markdown预览/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/01/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/01/18/Vim无插件Markdown预览/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>
@@ -194,7 +185,7 @@
       <ul>
         
           <li>
-            <a href="/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
+            <a href="/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
           </li>
         
           <li>
@@ -202,7 +193,7 @@
           </li>
         
           <li>
-            <a href="/2019/01/18/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
+            <a href="/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
           </li>
         
           <li>
