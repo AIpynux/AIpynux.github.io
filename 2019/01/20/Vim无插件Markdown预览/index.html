@@ -3,20 +3,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>The Space of Hgneer</title>
+  <title>Vim无插件实现Markdown预览 | The Space of Hgneer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Vim无插件实现Markdown预览环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;">
+  <meta name="description" content="环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;func! Preview()">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Space of Hgneer">
+<meta property="og:title" content="Vim无插件实现Markdown预览">
 <meta property="og:url" content="http://yoursite.com/2019/01/20/Vim无插件Markdown预览/index.html">
 <meta property="og:site_name" content="The Space of Hgneer">
-<meta property="og:description" content="Vim无插件实现Markdown预览环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;">
+<meta property="og:description" content="环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;func! Preview()">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png">
-<meta property="og:updated_time" content="2019-01-20T06:36:15.398Z">
+<meta property="og:updated_time" content="2019-01-20T11:01:49.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Space of Hgneer">
-<meta name="twitter:description" content="Vim无插件实现Markdown预览环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;">
+<meta name="twitter:title" content="Vim无插件实现Markdown预览">
+<meta name="twitter:description" content="环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;func! Preview()">
 <meta name="twitter:image" content="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png">
   
     <link rel="alternate" href="/atom.xml" title="The Space of Hgneer" type="application/atom+xml">
@@ -73,16 +73,30 @@
         <section id="main"><article id="post-Vim无插件Markdown预览" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/20/Vim无插件Markdown预览/" class="article-date">
-  <time datetime="2019-01-20T06:36:15.430Z" itemprop="datePublished">2019-01-20</time>
+  <time datetime="2019-01-20T06:58:53.000Z" itemprop="datePublished">2019-01-20</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tools/">Tools</a>►<a class="article-category-link" href="/categories/Tools/Vim/">Vim</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Vim无插件实现Markdown预览
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Vim无插件实现Markdown预览"><a href="#Vim无插件实现Markdown预览" class="headerlink" title="Vim无插件实现Markdown预览"></a>Vim无插件实现Markdown预览</h1><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+        <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
 <li><em>chromium-browser</em></li>
 <li><strong>Markdown Viewer</strong></li>
 <li><strong><em>Ubuntu16.04</em></strong></li>
@@ -102,7 +116,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/20/Vim无插件Markdown预览/" data-id="cjr4krr2400011agmi1idi3v9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/20/Vim无插件Markdown预览/" data-id="cjr4t07eq0001mugmbdhom3ho" class="article-share-link">Share</a>
       
       
     </footer>
@@ -111,19 +125,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/01/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">Improve the Speed of Git Clone from Github</div>
     </a>
   
 </nav>
@@ -139,30 +144,16 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/磁盘阵列/">磁盘阵列</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/磁盘阵列/lvm/">lvm</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/Vim/">Vim</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/磁盘阵列/">磁盘阵列</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/磁盘阵列/lvm/">lvm</a></li></ul></li></ul>
     </div>
   </div>
 
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux-Ubuntu/">Linux,Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/磁盘阵列-lvm/">磁盘阵列,lvm</a></li></ul>
-    </div>
-  </div>
-
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Linux-Ubuntu/" style="font-size: 10px;">Linux,Ubuntu</a> <a href="/tags/磁盘阵列-lvm/" style="font-size: 10px;">磁盘阵列,lvm</a>
-    </div>
-  </div>
-
   
     
   <div class="widget-wrap">
@@ -181,19 +172,15 @@
       <ul>
         
           <li>
+            <a href="/2019/01/20/Vim无插件Markdown预览/">Vim无插件实现Markdown预览</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/">Improve the Speed of Git Clone from Github</a>
+          </li>
+        
+          <li>
             <a href="/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统</a>
-          </li>
-        
-          <li>
-            <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/01/20/Vim无插件Markdown预览/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/01/17/hello-world/">Hello World</a>
           </li>
         
       </ul>
