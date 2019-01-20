@@ -3,11 +3,12 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>The Space of Hgneer</title>
+  <title>Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统 | The Space of Hgneer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息： 一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/bac">
+<meta name="keywords" content="Ubuntu,lvm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Space of Hgneer">
+<meta property="og:title" content="Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统">
 <meta property="og:url" content="http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/index.html">
 <meta property="og:site_name" content="The Space of Hgneer">
 <meta property="og:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息： 一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/bac">
@@ -40,9 +41,9 @@
 <meta property="og:image" content="https://img-blog.csdn.net/20171016164933632?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdn.net/20171017233611502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdn.net/20171016165228837?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2019-01-20T06:44:56.462Z">
+<meta property="og:updated_time" content="2019-01-20T07:00:52.364Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Space of Hgneer">
+<meta name="twitter:title" content="Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统">
 <meta name="twitter:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息： 一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/bac">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20171016163234990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
@@ -100,12 +101,22 @@
         <section id="main"><article id="post-Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" class="article-date">
-  <time datetime="2019-01-20T06:44:56.490Z" itemprop="datePublished">2019-01-20</time>
+  <time datetime="2019-01-20T06:56:53.000Z" itemprop="datePublished">2019-01-20</time>
 </a>
     
   </div>
   <div class="article-inner">
     
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统
+    </h1>
+  
+
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -135,14 +146,25 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" data-id="cjr4jlefo0003f7gmjoq9z79b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" data-id="cjr4jzbjv00045hgm73mv1lqc" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lvm/">lvm</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
+  
+    <a href="/2019/01/20/source-posts-Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          source/_posts/Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统
+        
+      </div>
+    </a>
   
   
     <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/" id="article-nav-older" class="article-nav-link-wrap">
@@ -163,9 +185,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lvm/">lvm</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/lvm/" style="font-size: 10px;">lvm</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -184,7 +220,11 @@
       <ul>
         
           <li>
-            <a href="/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
+            <a href="/2019/01/20/source-posts-Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统/">source/_posts/Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统</a>
           </li>
         
           <li>
