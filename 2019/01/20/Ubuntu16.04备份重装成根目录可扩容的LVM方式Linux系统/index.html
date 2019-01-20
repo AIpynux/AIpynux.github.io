@@ -5,12 +5,12 @@
   
   <title>The Space of Hgneer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：  一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/ba">
+  <meta name="description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息： 一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/bac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Space of Hgneer">
-<meta property="og:url" content="http://yoursite.com/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/index.html">
 <meta property="og:site_name" content="The Space of Hgneer">
-<meta property="og:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：  一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/ba">
+<meta property="og:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息： 一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/bac">
 <meta property="og:locale" content="Chinese">
 <meta property="og:image" content="https://img-blog.csdn.net/20171016163234990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdn.net/20171016163517344?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -40,10 +40,10 @@
 <meta property="og:image" content="https://img-blog.csdn.net/20171016164933632?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdn.net/20171017233611502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://img-blog.csdn.net/20171016165228837?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2019-01-19T12:49:33.966Z">
+<meta property="og:updated_time" content="2019-01-20T06:44:56.462Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Space of Hgneer">
-<meta name="twitter:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：  一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/ba">
+<meta name="twitter:description" content="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息： 一、备份进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。终端输入tar -cvpzf /tmp/bac">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20171016163234990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternate" href="/atom.xml" title="The Space of Hgneer" type="application/atom+xml">
@@ -99,8 +99,8 @@
       <div class="outer">
         <section id="main"><article id="post-Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" class="article-date">
-  <time datetime="2019-01-19T12:52:50.398Z" itemprop="datePublished">2019-01-19</time>
+    <a href="/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" class="article-date">
+  <time datetime="2019-01-20T06:44:56.490Z" itemprop="datePublished">2019-01-20</time>
 </a>
     
   </div>
@@ -109,8 +109,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统"><a href="#Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统" class="headerlink" title="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统"></a>Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统</h2><h6 id="说明-为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。"><a href="#说明-为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。" class="headerlink" title="说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。"></a>说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。</h6><p>先看一下我Ubuntu1的一些信息：</p>
-<p><img src="https://img-blog.csdn.net/20171016163234990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="Ubuntu1信息"></p>
+        <h2 id="Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统"><a href="#Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统" class="headerlink" title="Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统"></a>Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统</h2><h6 id="说明-为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。"><a href="#说明-为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。" class="headerlink" title="说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。"></a>说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。</h6><p>先看一下我Ubuntu1的一些信息：<br><img src="https://img-blog.csdn.net/20171016163234990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <h4 id="一、备份"><a href="#一、备份" class="headerlink" title="一、备份"></a>一、备份</h4><p>进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。<br>终端输入tar -cvpzf /tmp/back/back.tgz / –exclude=/proc –exclude=/lost+found –exclude=/tmp –exclude=/sys –exclude=/media。<br><img src="https://img-blog.csdn.net/20171016163517344?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>将Ubuntu1上所有挂载在/目录下的文件(除了/目录下proc、lost+found、tmp、sys和media文件夹)压缩在已挂载/dev/sdb1设备的目录/tmp的back文件夹下，并命名为back.tgz。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">注意：</span><br><span class="line">1. /tmp下的back文件夹须事先创建。</span><br><span class="line">2. 备份时勿包括/dev/sdb1所挂载的目录（此处为/tmp）。</span><br><span class="line">3. 记下那些备份时未包括进来的目录（即proc等），最后恢复时需要手动mkdir创建，否则系统会出错。</span><br><span class="line">4. 最后压缩结束后可能会出现  tar: 由于前次错误，将以上次的错误状态退出。这个不用理会即可。</span><br></pre></td></tr></table></figure>
 <h3 id="二、获取未分配的磁盘空间为Linux分区做准备"><a href="#二、获取未分配的磁盘空间为Linux分区做准备" class="headerlink" title="二、获取未分配的磁盘空间为Linux分区做准备"></a>二、获取未分配的磁盘空间为Linux分区做准备</h3><p>右击此电脑–&gt;管理<br><img src="https://img-blog.csdn.net/20171016163652451?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
@@ -136,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" data-id="cjr3m8a4h0003ztgmu4oxu8zh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" data-id="cjr4jf7sk0003wsgmv5hs7c1c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,17 +144,8 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/01/19/Vim无插件Markdown预览/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title"></div>
     </a>
@@ -194,15 +184,15 @@
       <ul>
         
           <li>
-            <a href="/2019/01/19/Vim无插件Markdown预览/">(no title)</a>
+            <a href="/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
+            <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
+            <a href="/2019/01/20/Vim无插件Markdown预览/">(no title)</a>
           </li>
         
           <li>

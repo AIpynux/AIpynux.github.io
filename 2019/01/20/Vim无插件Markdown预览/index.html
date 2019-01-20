@@ -5,18 +5,18 @@
   
   <title>The Space of Hgneer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Vim无插件实现Markdown预览 ##环境  chromium-browser Markdown Viewer Ubuntu16.04 Vim  ##步骤  确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;l">
+  <meta name="description" content="Vim无插件实现Markdown预览环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Space of Hgneer">
-<meta property="og:url" content="http://yoursite.com/2019/01/19/Vim无插件Markdown预览/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/01/20/Vim无插件Markdown预览/index.html">
 <meta property="og:site_name" content="The Space of Hgneer">
-<meta property="og:description" content="#Vim无插件实现Markdown预览 ##环境  chromium-browser Markdown Viewer Ubuntu16.04 Vim  ##步骤  确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;l">
+<meta property="og:description" content="Vim无插件实现Markdown预览环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;">
 <meta property="og:locale" content="Chinese">
 <meta property="og:image" content="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png">
-<meta property="og:updated_time" content="2019-01-19T15:16:09.826Z">
+<meta property="og:updated_time" content="2019-01-20T06:36:15.398Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Space of Hgneer">
-<meta name="twitter:description" content="#Vim无插件实现Markdown预览 ##环境  chromium-browser Markdown Viewer Ubuntu16.04 Vim  ##步骤  确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;l">
+<meta name="twitter:description" content="Vim无插件实现Markdown预览环境 chromium-browser Markdown Viewer Ubuntu16.04 Vim  步骤 确保chromium-browser可以从终端输入命令启动。 为chromium安装Markdown Viewer插件 在~/.vimrc中添加如下代码:  123456nmap &amp;lt;F4&amp;gt; :call Preview()&amp;lt;CR&amp;gt;">
 <meta name="twitter:image" content="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png">
   
     <link rel="alternate" href="/atom.xml" title="The Space of Hgneer" type="application/atom+xml">
@@ -72,8 +72,8 @@
       <div class="outer">
         <section id="main"><article id="post-Vim无插件Markdown预览" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/01/19/Vim无插件Markdown预览/" class="article-date">
-  <time datetime="2019-01-19T15:16:09.862Z" itemprop="datePublished">2019-01-19</time>
+    <a href="/2019/01/20/Vim无插件Markdown预览/" class="article-date">
+  <time datetime="2019-01-20T06:36:15.430Z" itemprop="datePublished">2019-01-20</time>
 </a>
     
   </div>
@@ -82,30 +82,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Vim无插件实现Markdown预览</p>
-<p>##环境</p>
-<ul>
+        <h1 id="Vim无插件实现Markdown预览"><a href="#Vim无插件实现Markdown预览" class="headerlink" title="Vim无插件实现Markdown预览"></a>Vim无插件实现Markdown预览</h1><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
 <li><em>chromium-browser</em></li>
 <li><strong>Markdown Viewer</strong></li>
 <li><strong><em>Ubuntu16.04</em></strong></li>
 <li><del>Vim</del></li>
 </ul>
-<p>##步骤</p>
-<ol>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
 <li>确保chromium-browser可以从终端输入命令启动。</li>
 <li>为chromium安装Markdown Viewer插件</li>
 <li>在~/.vimrc中添加如下代码:</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">nmap &lt;F4&gt; :call Preview()&lt;CR&gt;</span><br><span class="line">func! Preview()</span><br><span class="line">    if &amp;filetype == &apos;markdown.mkd&apos;</span><br><span class="line">        exec &quot;!chromium-browser %&quot;</span><br><span class="line">    endif</span><br><span class="line">endfunc</span><br></pre></td></tr></table></figure>
-<p>##效果<br>用Vim编辑Markdown文件时按F4会打开一个chromium窗口进行预览,每次保存文件时更新预览。<br><img src="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png" alt=""></p>
-<p>##注意<br>不要用Firefox，Firefox自动对离线文件的编码解析总不准确且不能修改默认的离线文件编码为Unicode，所以总是造成乱码。</p>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>用Vim编辑Markdown文件时按F4会打开一个chromium窗口进行预览,每次保存文件时更新预览。<br><img src="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png" alt=""></p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>不要用Firefox，Firefox自动对离线文件的编码解析总不准确且不能修改默认的离线文件编码为Unicode，所以总是造成乱码。</p>
 <hr>
-<p>##参考<br><a href="https://blog.csdn.net/Demorngel/article/details/72631234" target="_blank" rel="noopener">Vim无插件实现Markdown文件实时预览</a></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/Demorngel/article/details/72631234" target="_blank" rel="noopener">Vim无插件实现Markdown文件实时预览</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/19/Vim无插件Markdown预览/" data-id="cjr3m8a4b0002ztgm88ei2rjb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/20/Vim无插件Markdown预览/" data-id="cjr4jf7sd0001wsgmhntdl499" class="article-share-link">Share</a>
       
       
     </footer>
@@ -114,10 +111,19 @@
     
 <nav id="article-nav">
   
+    <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2019/01/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">Hello World</div>
     </a>
   
 </nav>
@@ -154,15 +160,15 @@
       <ul>
         
           <li>
-            <a href="/2019/01/19/Vim无插件Markdown预览/">(no title)</a>
+            <a href="/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/19/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">(no title)</a>
+            <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/18/Improve_the_Speed_of_Git_Clone_from_Github/">(no title)</a>
+            <a href="/2019/01/20/Vim无插件Markdown预览/">(no title)</a>
           </li>
         
           <li>
