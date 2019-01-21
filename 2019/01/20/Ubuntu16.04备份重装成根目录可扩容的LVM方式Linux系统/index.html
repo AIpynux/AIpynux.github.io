@@ -217,6 +217,7 @@
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
         <h6 id="说明-为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。"><a href="#说明-为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。" class="headerlink" title="说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。"></a>说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。</h6><p>先看一下我Ubuntu1的一些信息：<br><img src="https://img-blog.csdn.net/20171016163234990?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<a id="more"></a>
 <h4 id="一、备份"><a href="#一、备份" class="headerlink" title="一、备份"></a>一、备份</h4><p>进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。<br>终端输入tar -cvpzf /tmp/back/back.tgz / –exclude=/proc –exclude=/lost+found –exclude=/tmp –exclude=/sys –exclude=/media。<br><img src="https://img-blog.csdn.net/20171016163517344?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>将Ubuntu1上所有挂载在/目录下的文件(除了/目录下proc、lost+found、tmp、sys和media文件夹)压缩在已挂载/dev/sdb1设备的目录/tmp的back文件夹下，并命名为back.tgz。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">注意：</span><br><span class="line">1. /tmp下的back文件夹须事先创建。</span><br><span class="line">2. 备份时勿包括/dev/sdb1所挂载的目录（此处为/tmp）。</span><br><span class="line">3. 记下那些备份时未包括进来的目录（即proc等），最后恢复时需要手动mkdir创建，否则系统会出错。</span><br><span class="line">4. 最后压缩结束后可能会出现  tar: 由于前次错误，将以上次的错误状态退出。这个不用理会即可。</span><br></pre></td></tr></table></figure>
 <h3 id="二、获取未分配的磁盘空间为Linux分区做准备"><a href="#二、获取未分配的磁盘空间为Linux分区做准备" class="headerlink" title="二、获取未分配的磁盘空间为Linux分区做准备"></a>二、获取未分配的磁盘空间为Linux分区做准备</h3><p>右击此电脑–&gt;管理<br><img src="https://img-blog.csdn.net/20171016163652451?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM4OTYxNDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
@@ -243,7 +244,7 @@
         
           <section class="meta" id="footer-meta">
             
-              <time class="metatag time" itemprop="dateUpdated" datetime="2019-01-21T11:04:29+08:00" content="2019-01-21"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
+              <time class="metatag time" itemprop="dateUpdated" datetime="2019-01-21T21:21:31+08:00" content="2019-01-21"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
                 &nbsp;2019-01-21
               </time>
             
@@ -251,6 +252,56 @@
                 
                 <div class="metatag tags"><a class="tag" href="/tags/Ubuntu/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;Ubuntu</a></div>
             
+            
+              
+  <div class="metatag share -mob-share-list">
+    <i class="left fas fa-share-alt fa-fw" aria-hidden="true"></i>
+    <div class="-mob-share-list share-body">
+      
+        
+          <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/&title=Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统 | 红发的个人博客&summary=说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+            
+          </a>
+        
+      
+        
+          <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/&title=Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统 | 红发的个人博客&summary=说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+            
+          </a>
+        
+      
+        
+          <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/&title=Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统 | 红发的个人博客&summary=说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。先看一下我Ubuntu1的一些信息：">
+            
+              <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+            
+          </a>
+        
+      
+        
+          <a class="qrcode" rel="external nofollow noopener noreferrer" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD8UlEQVR42u3aS44iQQwFQO5/6ZkDMMB7tmlNS8EKAZVZGSxc/jwe8evP0yv5PFnh+dtXKzz/frPC6oUDBw4cOMqjvj92e+B8nWTfVyj5Ou//GBw4cODAccWRbJZsMItf7YGTEJtfiwMHDhw4/h+OPOi+T97y3Cr/M3DgwIEDx2/kmCVyeXUuOkDMhwMHDhw4fpIjKQ4mjZ9ZqylJz5JQmrfHDmqlOHDgwIHjcwWvDlq/5f1X5jtw4MCBA8eoFTQrwG2Svfw+k6SxOBcOHDhw4Fhz5O3/dvvvBfi2aFgncjhw4MCBY8GxH2WYZUMb9HygoS5Z4sCBAweONce+oJYPzCWDC21DKNmxDs84cODAgeOUY5ZEzQp2m9GEPcrLU+PAgQMHjgVHe7wkEZq1iPKkrm0p5b/HgQMHDhx7jllalQSwfTLWBuD9VThw4MCBY8/RJjmz5lM+7rC5h7ZM+aELhwMHDhw41hyzNKlNqNprZyE2TxRx4MCBA8ctR1LmyxtUm5bVbFRiMzz38jc4cODAgWPNkdxWO/RwNSFQH6N8XKgH5nDgwIEDR8xxOzM2K//l17ap2jDc4sCBAweOkqO99byp872iXh0m48cFHDhw4MBxy5EX/pKrZqG0fS7IR/GilXHgwIEDx5qjLavNynZJ6XBfCkzGINrwjwMHDhw4Wo4kjCXNpPz97KpNWlisjwMHDhw41hy3AwR5EK1TqcWYwjCQ48CBAweOEUeR28WHzz/ZjFPMyoIfwjAOHDhw4PgCR1t6y4+ah8l2DC4fufiAjgMHDhw41hyzsYA8cZqhJJW6WRp5UDHFgQMHDhxvOWZ1xDaMzRpObew7+Btw4MCBA8cRR3tbbSAs0qdRge+s6YUDBw4cOI44Zg2kWVlwFozzplSS1BUpHA4cOHDgOOVoP29DY3uMWZJWPArgwIEDB441R7tQ/u1sWKHdKw/bRUkRBw4cOHAsOGaJWZtutQlYHhTzoBuR4cCBAweONUfb8m8H0ZLt24JgmwQOxyBw4MCBA8eIY5NQXQ0W5CEwB82Tt5e1Uhw4cODAseDYtIg24a19FmgDak2MAwcOHDjWHLPtV+No66GHfKyhzmJx4MCBA8eaYzZ2kGC1aWF7vM36H7pwOHDgwIFjwZG/8mZPXqTLQ+ksGWsbWjhw4MCB44ojH19oA2F+7Fm6mHC8//wfe+HAgQMHjiOO5Ej5wW5TpnbEIV/zsfmHceDAgQPHmqMtKV61tfYBtUjwcODAgQPHD3K0gwtJATE5ZDKs0DaoHrOFcODAgQNHzLEPlrepWku5KUoOa6U4cODAgWNxt3lhrh1NaFO4/IFgBooDBw4cOBYcfwGaLveqW+04PwAAAABJRU5ErkJggg==">
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+          
+          </a>
+        
+      
+        
+          <a class="qrcode" rel="external nofollow noopener noreferrer" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD8UlEQVR42u3aS44iQQwFQO5/6ZkDMMB7tmlNS8EKAZVZGSxc/jwe8evP0yv5PFnh+dtXKzz/frPC6oUDBw4cOMqjvj92e+B8nWTfVyj5Ou//GBw4cODAccWRbJZsMItf7YGTEJtfiwMHDhw4/h+OPOi+T97y3Cr/M3DgwIEDx2/kmCVyeXUuOkDMhwMHDhw4fpIjKQ4mjZ9ZqylJz5JQmrfHDmqlOHDgwIHjcwWvDlq/5f1X5jtw4MCBA8eoFTQrwG2Svfw+k6SxOBcOHDhw4Fhz5O3/dvvvBfi2aFgncjhw4MCBY8GxH2WYZUMb9HygoS5Z4sCBAweONce+oJYPzCWDC21DKNmxDs84cODAgeOUY5ZEzQp2m9GEPcrLU+PAgQMHjgVHe7wkEZq1iPKkrm0p5b/HgQMHDhx7jllalQSwfTLWBuD9VThw4MCBY8/RJjmz5lM+7rC5h7ZM+aELhwMHDhw41hyzNKlNqNprZyE2TxRx4MCBA8ctR1LmyxtUm5bVbFRiMzz38jc4cODAgWPNkdxWO/RwNSFQH6N8XKgH5nDgwIEDR8xxOzM2K//l17ap2jDc4sCBAweOkqO99byp872iXh0m48cFHDhw4MBxy5EX/pKrZqG0fS7IR/GilXHgwIEDx5qjLavNynZJ6XBfCkzGINrwjwMHDhw4Wo4kjCXNpPz97KpNWlisjwMHDhw41hy3AwR5EK1TqcWYwjCQ48CBAweOEUeR28WHzz/ZjFPMyoIfwjAOHDhw4PgCR1t6y4+ah8l2DC4fufiAjgMHDhw41hyzsYA8cZqhJJW6WRp5UDHFgQMHDhxvOWZ1xDaMzRpObew7+Btw4MCBA8cRR3tbbSAs0qdRge+s6YUDBw4cOI44Zg2kWVlwFozzplSS1BUpHA4cOHDgOOVoP29DY3uMWZJWPArgwIEDB441R7tQ/u1sWKHdKw/bRUkRBw4cOHAsOGaJWZtutQlYHhTzoBuR4cCBAweONUfb8m8H0ZLt24JgmwQOxyBw4MCBA8eIY5NQXQ0W5CEwB82Tt5e1Uhw4cODAseDYtIg24a19FmgDak2MAwcOHDjWHLPtV+No66GHfKyhzmJx4MCBA8eaYzZ2kGC1aWF7vM36H7pwOHDgwIFjwZG/8mZPXqTLQ+ksGWsbWjhw4MCB44ojH19oA2F+7Fm6mHC8//wfe+HAgQMHjiOO5Ej5wW5TpnbEIV/zsfmHceDAgQPHmqMtKV61tfYBtUjwcODAgQPHD3K0gwtJATE5ZDKs0DaoHrOFcODAgQNHzLEPlrepWku5KUoOa6U4cODAgWNxt3lhrh1NaFO4/IFgBooDBw4cOBYcfwGaLveqW+04PwAAAABJRU5ErkJggg==">
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+          
+          </a>
+        
+      
+    </div>
+  </div>
+
+
             
           </section>
         
@@ -312,6 +363,19 @@
       
 
       
+        <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+        
+        
+        
+          
+            <section id="comments">
+              <div id="valine_container" class="valine_thread">
+                <i class="fas fa-spinner fa-spin fa-fw"></i>
+              </div>
+            </section>
+          
+        
+      
     </section>
   </article>
 
@@ -345,7 +409,7 @@
         
         
         
-          <p><span id="jinrishici-sentence">红发的个人博客</span></p>
+          <p><span id="jinrishici-sentence">常怀敬畏之心</span></p>
           <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         
       </div>
@@ -371,28 +435,6 @@
         
       </div>
     
-  </div>
-</section>
-
-      
-    
-  
-    
-      
-      
-        <section class="plain">
-  
-<header class="pure">
-  <div><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;注意啦～</div>
-  
-    <a class="rightBtn" target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com/wiki/material-x/" title="https://xaoxuu.com/wiki/material-x/">
-    <i class="fas fa-question-circle fa-fw"></i></a>
-  
-</header>
-
-  <div class="content pure">
-    <p>本站使用 <a href="https://xaoxuu.com/wiki/material-x/">Material X</a> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦，超喜欢的话还可以安利给身边的朋友哦～</p>
-
   </div>
 </section>
 
@@ -460,29 +502,53 @@
     
       
       
-        <section class="list">
-  
+        
+
+
+  <section class="music">
+    
 <header class="pure">
-  <div><i class="fas fa-link fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;特别链接</div>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn" target="_blank" rel="external nofollow noopener noreferrer" href="https://www.xiami.com/user/333339326" title="https://www.xiami.com/user/333339326">
+    <i class="far fa-heart fa-fw"></i></a>
   
 </header>
 
-  <div class="content pure">
-    <ul class="entry">
+    <div class="content pure">
       
-        <li><a class="flat-box" title="https://xaoxuu.com/about/" href="https://xaoxuu.com/about/">
-          <div class="name">
-            
-              <i class="fas fa-comment-dots fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;关于我 / 留言板
-          </div>
-          
-        </a></li>
-      
-    </ul>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer" data-theme="#1BCDFC" data-mode="circulation" data-server="xiami" data-type="playlist" data-id="435672012" data-volume="0.7">
   </div>
-</section>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+      
+    
+  
+    
+      
+      
+        
+  <section class="toc-wrapper">
+    
+<header class="pure">
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章目录</div>
+  
+    <div class="wrapper"><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class="content pure">
+      <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#说明-为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。"><span class="toc-text">说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。</span></a></li></ol><li class="toc-item toc-level-4"><a class="toc-link" href="#一、备份"><span class="toc-text">一、备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、获取未分配的磁盘空间为Linux分区做准备"><span class="toc-text">二、获取未分配的磁盘空间为Linux分区做准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、分区"><span class="toc-text">三、分区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、创建PV、VG、LV"><span class="toc-text">四、创建PV、VG、LV</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、重装系统"><span class="toc-text">五、重装系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、恢复数据及配置"><span class="toc-text">六、恢复数据及配置</span></a>
+    </li></div>
+  </section>
+
 
       
     
@@ -576,6 +642,44 @@
 
   
   
+  
+    
+      
+      
+      
+        
+          <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+          
+            
+              <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1/js/volantis.min.js"></script>
+            
+          
+          <script>
+          var GUEST_INFO = ['nick','mail','link'];
+          var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          var notify = 'false' == true;
+          var verify = 'false' == true;
+          var valine = new Valine();
+          valine.init({
+            el: '#valine_container',
+            notify: notify,
+            verify: verify,
+            guest_info: guest_info,
+            
+            appId: "rIlXBk2P71cgo3jOKAHjAhY6-gzGzoHsz",
+            appKey: "ir12jRSK0QNO7sSyLDWRSgXI",
+            placeholder: "快来评论吧~",
+            pageSize:'10',
+            avatar:'mp',
+            lang:'zh-cn',
+            highlight:''
+          })
+          </script>
+        
+      
+    
   
   
     <script src="/js/app.js"></script>
