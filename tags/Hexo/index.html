@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Vim无插件实现Markdown预览 | 红发的个人博客</title>
+  <title>Tag: Hexo | 红发的个人博客</title>
   
   
   <meta name="description" content="学习Java后端开发中">
@@ -174,20 +174,45 @@
     <div class="l_body">
     <div class='container clearfix'>
         <div class='l_main'>
-            <article id="post" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
-  
+            
+    <script>
+        window.subData= { title:'标签 : Hexo'}
+    </script>
+
+
+<section class="post-list">
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        <div class="post-wrapper">
+          <article class="post reveal ">
+    
 <section class="meta">
   
   <div class="meta" id="header-meta">
     
-      
-          <h1 class="title">Vim无插件实现Markdown预览</h1>
-      
+      <h2 class="title">
+          <a href="/2019/01/21/Hexo建站/">
+              
+                  Hexo建站
+              
+          </a>
+      </h2>
     
 
     
       <time class="metatag time">
-        <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-01-20
+        <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-01-21
       </time>
     
 
@@ -195,18 +220,12 @@
       
     
     <div class="metatag cats">
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;<a class="categories" href="/categories/Tools/">Tools</a>&nbsp;/&nbsp;<a class="categories" href="/categories/Tools/Vim/">Vim</a>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;<a class="categories" href="/categories/笔记/">笔记</a>
     </div>
 
 
     
 
-    
-      
-        <div class="metatag browse busuanzi"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-          &nbsp;<span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-        </div>
-      
     
 
     
@@ -215,127 +234,29 @@
 </section>
 
     <section class="article typo">
-      <div class="article-entry" itemprop="articleBody">
-        <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li><em>chromium-browser</em></li>
-<li><strong>Markdown Viewer</strong></li>
-<li><strong><em>Ubuntu16.04</em></strong></li>
-<li><del>Vim</del></li>
-</ul>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li>确保chromium-browser可以从终端输入命令启动。</li>
-<li>为chromium安装Markdown Viewer插件</li>
-<li>在~/.vimrc中添加如下代码:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">nmap &lt;F4&gt; :call Preview()&lt;CR&gt;</span><br><span class="line">func! Preview()</span><br><span class="line">    if &amp;filetype == &apos;markdown.mkd&apos;</span><br><span class="line">        exec &quot;!chromium-browser %&quot;</span><br><span class="line">    endif</span><br><span class="line">endfunc</span><br></pre></td></tr></table></figure>
-<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>用Vim编辑Markdown文件时按F4会打开一个chromium窗口进行预览,每次保存文件时更新预览。<br><img src="https://github.com/hgneer/Resource_of_Blogs/raw/master/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88.png" alt=""></p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>不要用Firefox，Firefox自动对离线文件的编码解析总不准确且不能修改默认的离线文件编码为Unicode，所以总是造成乱码。</p>
-<hr>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/Demorngel/article/details/72631234" target="_blank" rel="noopener">Vim无插件实现Markdown文件实时预览</a></p>
-
-      </div>
         
-          <section class="meta" id="footer-meta">
-            
-              <time class="metatag time" itemprop="dateUpdated" datetime="2019-01-21T11:04:58+08:00" content="2019-01-21"><i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
-                &nbsp;2019-01-21
-              </time>
-            
-            
-                
-                <div class="metatag tags"><a class="tag" href="/tags/Vim/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;Vim</a></div>
-            
-            
-          </section>
         
 
         
-            <div class="prev-next">
+            <div class="full-width auto-padding tags">
                 
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/2019/01/21/Hexo建站/" rel="prev" title="Hexo建站">
-                                  
-                                      Hexo建站
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/Hexo/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Hexo</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-                
-                    <section class="next">
-                        <span class="art-item-right" aria-hidden="true">
-                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                            <h4>
-                                <a href="/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/" rel="prev" title="Improve the Speed of Git Clone from Github">
-                                    
-                                        Improve the Speed of Git Clone from Github
-                                    
-                                </a>
-                            </h4>
-                            
-                        </span>
-                    </section>
+                    <a href="/tags/Hexo/"><i class="fas fa-hashtag fa-fw"></i>Hexo</a>
                 
             </div>
         
-
     </section>
-
 </article>
 
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-<br>
-
-<!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box comments">
-    <section class="article typo">
-
+        </div>
       
-        
-
-    <div class="recommended_posts">
-        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;相关文章</h4>
-        <ul>
-            
-                <li><a href="http://yoursite.com/2019/01/21/Hexo建站/">Hexo建站</a></li>
-            
-                <li><a href="http://yoursite.com/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/">Improve the Speed of Git Clone from Github</a></li>
-            
-                <li><a href="http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/">Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统</a></li>
-            
-        </ul>
-    </div>
-
-
-      
-
-      
-    </section>
-  </article>
+    
+</section>
 
 
 
-<script>
-    window.subData = {
-        title: 'Vim无插件实现Markdown预览',
-        tools: true
-    }
-</script>
+<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+
+
 
 
         </div>
