@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>配置Hexo主题之Melody</title>
+      <link href="/2019/02/03/%E9%85%8D%E7%BD%AEHexo%E4%B8%BB%E9%A2%98%E4%B9%8BMelody/"/>
+      <url>/2019/02/03/%E9%85%8D%E7%BD%AEHexo%E4%B8%BB%E9%A2%98%E4%B9%8BMelody/</url>
+      
+        <content type="html"><![CDATA[<h3 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h3><p>使用Hexo的data file特性新建Melody主题的melody.yml配置文件后，<br>将个人博客部署到本地，输入本地URL后，浏览器没有响应，提示代码如下:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Unhandled rejection TypeError: /home/hgneer/Hexo/themes/melody/layout/includes/layout.pug:31</span><br><span class="line">    29|       each url in theme.stylesheets</span><br><span class="line">    30|         link(rel=&apos;stylesheet&apos;, href=url_for(url) + &apos;?version=&apos; + version())</span><br><span class="line">  &gt; 31|     each item in theme.cdn.css</span><br><span class="line">    32|       if item !== undefined</span><br><span class="line">    33|         link(rel=&apos;stylesheet&apos;, href=item + &apos;?version=&apos; + version())</span><br><span class="line">    34|     include ./head.pug</span><br><span class="line"></span><br><span class="line">Cannot read property &apos;css&apos; of undefined</span><br><span class="line">    at eval (eval at wrap (/home/hgneer/Hexo/node_modules/pug-runtime/wrap.js:6:10), &lt;anonymous&gt;:80:25)</span><br><span class="line">    at eval (eval at wrap (/home/hgneer/Hexo/node_modules/pug-runtime/wrap.js:6:10), &lt;anonymous&gt;:102:4)</span><br><span class="line">    at template (eval at wrap (/home/hgneer/Hexo/node_modules/pug-runtime/wrap.js:6:10), &lt;anonymous&gt;:1657:72)</span><br><span class="line">    at Theme._View.View._compiled.locals [as _compiled] (/home/hgneer/Hexo/node_modules/hexo/lib/theme/view.js:125:48)</span><br><span class="line">    at Theme._View.View.View.render (/home/hgneer/Hexo/node_modules/hexo/lib/theme/view.js:30:15)</span><br><span class="line">    at route.set (/home/hgneer/Hexo/node_modules/hexo/lib/hexo/index.js:394:29)</span><br><span class="line">    at tryCatcher (/home/hgneer/Hexo/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at /home/hgneer/Hexo/node_modules/bluebird/js/release/method.js:15:34</span><br><span class="line">    at RouteStream._read (/home/hgneer/Hexo/node_modules/hexo/lib/hexo/router.js:134:3)</span><br><span class="line">    at RouteStream.Readable.read (_stream_readable.js:452:10)</span><br><span class="line">    at resume_ (_stream_readable.js:899:12)</span><br><span class="line">    at process._tickCallback (internal/process/next_tick.js:63:19)</span><br></pre></td></tr></table></figure><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>需要复制到Hexo/source/_data下的_config.yml是melody主题目录下的而非Hexo目录下的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编码笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>可选发型</title>
       <link href="/2019/01/31/%E5%8F%AF%E9%80%89%E5%8F%91%E5%9E%8B/"/>
       <url>/2019/01/31/%E5%8F%AF%E9%80%89%E5%8F%91%E5%9E%8B/</url>
