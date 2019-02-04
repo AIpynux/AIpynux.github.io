@@ -5,9 +5,9 @@
   <subtitle>常怀敬畏之心</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://AIpynux.github.io/"/>
   <updated>2019-02-03T11:59:39.234Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://AIpynux.github.io/</id>
   
   <author>
     <name>AIpynux</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>配置Hexo主题之Melody</title>
-    <link href="http://yoursite.com/2019/02/03/%E9%85%8D%E7%BD%AEHexo%E4%B8%BB%E9%A2%98%E4%B9%8BMelody/"/>
-    <id>http://yoursite.com/2019/02/03/配置Hexo主题之Melody/</id>
+    <link href="https://AIpynux.github.io/2019/02/03/%E9%85%8D%E7%BD%AEHexo%E4%B8%BB%E9%A2%98%E4%B9%8BMelody/"/>
+    <id>https://AIpynux.github.io/2019/02/03/配置Hexo主题之Melody/</id>
     <published>2019-02-03T09:22:10.000Z</published>
     <updated>2019-02-03T11:59:39.234Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="编码笔记" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0/"/>
+      <category term="编码笔记" scheme="https://AIpynux.github.io/categories/%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://AIpynux.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>可选发型</title>
-    <link href="http://yoursite.com/2019/01/31/%E5%8F%AF%E9%80%89%E5%8F%91%E5%9E%8B/"/>
-    <id>http://yoursite.com/2019/01/31/可选发型/</id>
+    <link href="https://AIpynux.github.io/2019/01/31/%E5%8F%AF%E9%80%89%E5%8F%91%E5%9E%8B/"/>
+    <id>https://AIpynux.github.io/2019/01/31/可选发型/</id>
     <published>2019-01-31T08:53:55.000Z</published>
     <updated>2019-02-03T08:46:27.913Z</updated>
     
@@ -64,43 +64,55 @@
     
     </summary>
     
-      <category term="生活笔记" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E7%AC%94%E8%AE%B0/"/>
+      <category term="生活笔记" scheme="https://AIpynux.github.io/categories/%E7%94%9F%E6%B4%BB%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>为Github账户设置GPG认证</title>
-    <link href="http://yoursite.com/2019/01/31/%E4%B8%BAGithub%E8%B4%A6%E6%88%B7%E8%AE%BE%E7%BD%AEGPG%E8%AE%A4%E8%AF%81/"/>
-    <id>http://yoursite.com/2019/01/31/为Github账户设置GPG认证/</id>
+    <link href="https://AIpynux.github.io/2019/01/31/%E4%B8%BAGithub%E8%B4%A6%E6%88%B7%E8%AE%BE%E7%BD%AEGPG%E8%AE%A4%E8%AF%81/"/>
+    <id>https://AIpynux.github.io/2019/01/31/为Github账户设置GPG认证/</id>
     <published>2019-01-31T06:28:35.000Z</published>
-    <updated>2019-02-02T04:11:50.005Z</updated>
+    <updated>2019-02-04T04:11:18.069Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p><strong>GPG密钥算法旨在完成文件传输过程中的加密工作。</strong></p><p><em>Github支持的GPG密钥算法:</em></p><ul><li>RSA</li><li>ElGamal</li><li>DSA</li><li>ECDH</li><li>ECDSA</li><li>EdDSA</li></ul><p><em>为Github账户设置GPG认证的好处:</em></p><ol><li><p>可以限制使得对项目的commit必须经过认证后才能merge。</p></li><li><p>让项目使用者明晰哪些commit是官方认证哪些又是未经许可。</p></li></ol><h3 id="查看已有GPG密钥"><a href="#查看已有GPG密钥" class="headerlink" title="查看已有GPG密钥"></a>查看已有GPG密钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --list-secret-keys --keyid-format LONG</span><br></pre></td></tr></table></figure><h3 id="创建GPG密钥"><a href="#创建GPG密钥" class="headerlink" title="创建GPG密钥"></a>创建GPG密钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --gen-key</span><br></pre></td></tr></table></figure><h3 id="添加密钥到Github账户"><a href="#添加密钥到Github账户" class="headerlink" title="添加密钥到Github账户"></a>添加密钥到Github账户</h3><p>查看已创建的密钥，从中选择要添加到Github的密钥ID是<strong>6DD5E93799EE33C7</strong>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --list-secret-keys --keyid-format LONG</span><br><span class="line">/home/hgneer/.gnupg/secring.gpg</span><br><span class="line">-------------------------------</span><br><span class="line">sec   2048R/BCA9B4B1BA4C13CE 2017-04-05</span><br><span class="line">uid                          HeGuang (GPG key <span class="keyword">for</span> HeGuang) &lt;hgneer@gmail.com&gt;</span><br><span class="line">ssb   2048R/D0B0CD73B2553FBB 2017-04-05</span><br><span class="line"></span><br><span class="line">sec   4096R/6DD5E93799EE33C7 2019-01-31</span><br><span class="line">uid                          AIpynux (New World!) &lt;AIpynux@gmail.com&gt;</span><br><span class="line">ssb   4096R/2C344A43117B0512 2019-01-31</span><br></pre></td></tr></table></figure><p>使用如下命令将ID是<strong>6DD5E93799EE33C7</strong>的密钥的公钥输出到终端显示。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --armor --<span class="built_in">export</span> 6DD5E93799EE33C7</span><br></pre></td></tr></table></figure><p>之后将得到的像下面格式一样的文本复制Github账户的GPG密钥设置框。</p><blockquote><p>—–BEGIN PGP PUBLIC KEY BLOCK—–<br>公钥内容<br>—–END PGP PUBLIC KEY BLOCK—–.</p></blockquote><h3 id="为本地Git设置全局GPG密钥ID"><a href="#为本地Git设置全局GPG密钥ID" class="headerlink" title="为本地Git设置全局GPG密钥ID"></a>为本地Git设置全局GPG密钥ID</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.signingkey 6DD5E93799EE33C7</span><br></pre></td></tr></table></figure><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ul><li><p><a href="http://www.ruanyifeng.com/blog/2013/07/gpg.html" target="_blank" rel="noopener">GPG入门教程</a></p></li><li><p><a href="https://help.github.com/articles/managing-commit-signature-verification/" target="_blank" rel="noopener">Managing commit signature verification</a></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p><strong>GPG密钥算法旨在完成文件传输过程中的加密工作。</strong></p><p><em>Github支持的GPG密钥算法:</em></p><ul><li>RSA</li><li>ElGamal</li><li>DSA</li><li>ECDH</li><li>ECDSA</li><li>EdDSA</li></ul><p><em>为Github账户设置GPG认证的好处:</em></p><ol><li><p>可以限制使得对项目的commit必须经过认证后才能merge。</p></li><li><p>让项目使用者明晰哪些commit是官方认证哪些又是未经许可。</p></li></ol><a id="more"></a><h3 id="查看已有GPG密钥"><a href="#查看已有GPG密钥" class="headerlink" title="查看已有GPG密钥"></a>查看已有GPG密钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --list-secret-keys --keyid-format LONG</span><br></pre></td></tr></table></figure><h3 id="创建GPG密钥"><a href="#创建GPG密钥" class="headerlink" title="创建GPG密钥"></a>创建GPG密钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --gen-key</span><br></pre></td></tr></table></figure><h3 id="添加密钥到Github账户"><a href="#添加密钥到Github账户" class="headerlink" title="添加密钥到Github账户"></a>添加密钥到Github账户</h3><p>查看已创建的密钥，从中选择要添加到Github的密钥ID是<strong>6DD5E93799EE33C7</strong>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --list-secret-keys --keyid-format LONG</span><br><span class="line">/home/hgneer/.gnupg/secring.gpg</span><br><span class="line">-------------------------------</span><br><span class="line">sec   2048R/BCA9B4B1BA4C13CE 2017-04-05</span><br><span class="line">uid                          HeGuang (GPG key <span class="keyword">for</span> HeGuang) &lt;hgneer@gmail.com&gt;</span><br><span class="line">ssb   2048R/D0B0CD73B2553FBB 2017-04-05</span><br><span class="line"></span><br><span class="line">sec   4096R/6DD5E93799EE33C7 2019-01-31</span><br><span class="line">uid                          AIpynux (New World!) &lt;AIpynux@gmail.com&gt;</span><br><span class="line">ssb   4096R/2C344A43117B0512 2019-01-31</span><br></pre></td></tr></table></figure><p>使用如下命令将ID是<strong>6DD5E93799EE33C7</strong>的密钥的公钥输出到终端显示。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --armor --<span class="built_in">export</span> 6DD5E93799EE33C7</span><br></pre></td></tr></table></figure><p>之后将得到的像下面格式一样的文本复制Github账户的GPG密钥设置框。</p><blockquote><p>—–BEGIN PGP PUBLIC KEY BLOCK—–<br>公钥内容<br>—–END PGP PUBLIC KEY BLOCK—–.</p></blockquote><h3 id="为本地Git设置全局GPG密钥ID"><a href="#为本地Git设置全局GPG密钥ID" class="headerlink" title="为本地Git设置全局GPG密钥ID"></a>为本地Git设置全局GPG密钥ID</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.signingkey 6DD5E93799EE33C7</span><br></pre></td></tr></table></figure><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ul><li><p><a href="http://www.ruanyifeng.com/blog/2013/07/gpg.html" target="_blank" rel="noopener">GPG入门教程</a></p></li><li><p><a href="https://help.github.com/articles/managing-commit-signature-verification/" target="_blank" rel="noopener">Managing commit signature verification</a></p></li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;GPG密钥算法旨在完成文件传输过程中的加密工作。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Github支持的GPG密钥算法:
-      
+      &lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;GPG密钥算法旨在完成文件传输过程中的加密工作。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Github支持的GPG密钥算法:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RSA&lt;/li&gt;
+&lt;li&gt;ElGamal&lt;/li&gt;
+&lt;li&gt;DSA&lt;/li&gt;
+&lt;li&gt;ECDH&lt;/li&gt;
+&lt;li&gt;ECDSA&lt;/li&gt;
+&lt;li&gt;EdDSA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;为Github账户设置GPG认证的好处:&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;可以限制使得对项目的commit必须经过认证后才能merge。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;让项目使用者明晰哪些commit是官方认证哪些又是未经许可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
-      <category term="编码笔记" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0/"/>
+      <category term="编码笔记" scheme="https://AIpynux.github.io/categories/%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="https://AIpynux.github.io/tags/Git/"/>
     
-      <category term="GPG" scheme="http://yoursite.com/tags/GPG/"/>
+      <category term="GPG" scheme="https://AIpynux.github.io/tags/GPG/"/>
     
   </entry>
   
   <entry>
     <title>Vim无插件实现Markdown预览</title>
-    <link href="http://yoursite.com/2019/01/20/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88/"/>
-    <id>http://yoursite.com/2019/01/20/Vim无插件Markdown预览/</id>
+    <link href="https://AIpynux.github.io/2019/01/20/Vim%E6%97%A0%E6%8F%92%E4%BB%B6Markdown%E9%A2%84%E8%A7%88/"/>
+    <id>https://AIpynux.github.io/2019/01/20/Vim无插件Markdown预览/</id>
     <published>2019-01-20T06:58:53.000Z</published>
     <updated>2019-02-02T04:11:50.005Z</updated>
     
@@ -117,21 +129,21 @@
     
     </summary>
     
-      <category term="Tools" scheme="http://yoursite.com/categories/Tools/"/>
+      <category term="Tools" scheme="https://AIpynux.github.io/categories/Tools/"/>
     
-      <category term="Vim" scheme="http://yoursite.com/categories/Tools/Vim/"/>
+      <category term="Vim" scheme="https://AIpynux.github.io/categories/Tools/Vim/"/>
     
     
-      <category term="Vim" scheme="http://yoursite.com/tags/Vim/"/>
+      <category term="Vim" scheme="https://AIpynux.github.io/tags/Vim/"/>
     
   </entry>
   
   <entry>
     <title>Improve the Speed of Git Clone from Github</title>
-    <link href="http://yoursite.com/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/"/>
-    <id>http://yoursite.com/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/</id>
+    <link href="https://AIpynux.github.io/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/"/>
+    <id>https://AIpynux.github.io/2019/01/20/Improve_the_Speed_of_Git_Clone_from_Github/</id>
     <published>2019-01-20T06:57:53.000Z</published>
-    <updated>2019-02-02T04:11:50.005Z</updated>
+    <updated>2019-02-04T04:22:54.285Z</updated>
     
     <content type="html"><![CDATA[<h2 id="出现障碍"><a href="#出现障碍" class="headerlink" title="出现障碍"></a>出现障碍</h2><p>更新Vim到8.1后检查插件状态，发现ale需要重新安装。</p><p>用的插件管理器是Vim-Plug，在.vimrc.bundles中添加:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plug &apos;w0rp/ale&apos;</span><br></pre></td></tr></table></figure><p>之后在Vim中执行命令</p><blockquote><p>:PlugInstall</p></blockquote><p>看着屏幕上的进度条一点点地跑到终点，终端却抛来如下错误:</p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">fatal: early EOF</span><br><span class="line">fatal: index-pack failed</span><br></pre></td></tr></table></figure><h2 id="分析原因"><a href="#分析原因" class="headerlink" title="分析原因"></a>分析原因</h2><p>看上诉错误的字面意思是下载的包在传输过程中提前结束。我以为凑巧出错便重新下载。</p><p>经过实验多次，这样的错误发生不是偶然。之后,经过查阅文档,我发现Vim-Plug实际上采</p><p>用git来下载安装Github上的插件项目。然而,国内用终端克隆Github上Repository速度特慢,</p><p>猜测此次障碍可能由此造成。</p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="1-为git设置代理"><a href="#1-为git设置代理" class="headerlink" title="1. 为git设置代理"></a>1. 为git设置代理</h3><p>在设置了SS代理的前提下，从终端输入:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:1080</span><br><span class="line">git config --global https.https://github.com.proxy socks5://127.0.0.1:1080</span><br></pre></td></tr></table></figure><h3 id="2-修改Hosts"><a href="#2-修改Hosts" class="headerlink" title="2. 修改Hosts"></a>2. 修改Hosts</h3><p>用以下命令查找github.global.ssl.fastly.Net和github.com对应的IP地址:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nslookup github.global.ssl.fastly.Net</span><br><span class="line">nslookup github.com</span><br></pre></td></tr></table></figure></p><p>之后将IP地址和域名对添加到/etc/hosts文件。</p><h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>git clone的速度从10.0KB/s提升到150.0KB/s;出现的插件下载安装障碍得到解决。</p><hr><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://blog.csdn.net/hzwwpgmwy/article/details/79043251" target="_blank" rel="noopener">git clone速度太慢解决方案</a></p><p><a href="https://www.zhihu.com/question/27159393" target="_blank" rel="noopener">git clone一个github上的仓库，太慢…</a></p>]]></content>
     
@@ -148,19 +160,21 @@
     
     </summary>
     
-      <category term="Tools" scheme="http://yoursite.com/categories/Tools/"/>
+      <category term="Tools" scheme="https://AIpynux.github.io/categories/Tools/"/>
     
-      <category term="Git" scheme="http://yoursite.com/categories/Tools/Git/"/>
+      <category term="Git" scheme="https://AIpynux.github.io/categories/Tools/Git/"/>
     
+    
+      <category term="Git" scheme="https://AIpynux.github.io/tags/Git/"/>
     
   </entry>
   
   <entry>
-    <title>Ubuntu16-04备份重装成根目录可扩容LVM方式Linux系统</title>
-    <link href="http://yoursite.com/2019/01/20/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%88%90%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9%E7%9A%84LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://yoursite.com/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/</id>
+    <title>Ubuntu16.04备份重装成根目录可扩容LVM方式Linux系统</title>
+    <link href="https://AIpynux.github.io/2019/01/20/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%88%90%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9%E7%9A%84LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://AIpynux.github.io/2019/01/20/Ubuntu16.04备份重装成根目录可扩容的LVM方式Linux系统/</id>
     <published>2019-01-20T06:56:53.000Z</published>
-    <updated>2019-02-02T04:11:50.005Z</updated>
+    <updated>2019-02-04T01:57:19.880Z</updated>
     
     <content type="html"><![CDATA[<p><strong>说明:为了区分原先系统和重装后系统以及述说方便，将原先系统称作Ubuntu1，重装后系统称作Ubuntu2。</strong></p><p>先看一下我Ubuntu1的一些信息：<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image1.png" alt=""></p><a id="more"></a><h4 id="一、备份"><a href="#一、备份" class="headerlink" title="一、备份"></a>一、备份</h4><p>进入Ubuntu1，输入su root切换root，将设备/dev/sdb1（选一个你机器上有空余空间未挂载的分区）挂载到/tmp。<br>终端输入tar -cvpzf /tmp/back/back.tgz / –exclude=/proc –exclude=/lost+found –exclude=/tmp –exclude=/sys –exclude=/media。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image2.png" alt=""><br>将Ubuntu1上所有挂载在/目录下的文件(除了/目录下proc、lost+found、tmp、sys和media文件夹)压缩在已挂载/dev/sdb1设备的目录/tmp的back文件夹下，并命名为back.tgz。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">注意：</span><br><span class="line">1. /tmp下的back文件夹须事先创建。</span><br><span class="line">2. 备份时勿包括/dev/sdb1所挂载的目录（此处为/tmp）。</span><br><span class="line">3. 记下那些备份时未包括进来的目录（即proc等），最后恢复时需要手动mkdir创建，否则系统会出错。</span><br><span class="line">4. 最后压缩结束后可能会出现  tar: 由于前次错误，将以上次的错误状态退出。这个不用理会即可。</span><br></pre></td></tr></table></figure><h3 id="二、分配磁盘"><a href="#二、分配磁盘" class="headerlink" title="二、分配磁盘"></a>二、分配磁盘</h3><p>右击此电脑–&gt;管理<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image4.png" alt=""></p><p>得到计算机管理窗口–&gt;点击磁盘管理–&gt;右键单击选择要压缩的磁盘<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image5.png" alt=""></p><p>在<em>输入压缩空间量（MB）</em>里填写要压缩出的空间量,我这里压缩50G–&gt;压缩<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image6.png" alt=""></p><p>注：这里得到未分配的磁盘为待会我们用Linux进行LVM式分区做准备。<br>(电脑若有有空闲空间的设备直接跳过此步骤到第三步进行分区）</p><h3 id="三、分区"><a href="#三、分区" class="headerlink" title="三、分区"></a>三、分区</h3><p>制作Ubuntu16.04的U盘启动盘，进入试用即LiveCD模式。<br>首先在终端输入sudo passwd root，改变试用系统下root用户的密码。<br>之后输入su root切换成root用户，之后的大多操作都需要root权限。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image8.png" alt=""></p><p>  终端输入fdisk -l找到划分好有空闲空间的磁盘设备名。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image9.png" alt=""></p><p>我主机上有未分配磁盘空间的设备是/dev/sdb。所以终端输入fdisk /dev/sdb。输入n新建一个分区(/dev/sdb6)。<br>分区号为6–&gt;分区起始扇区按回车默认设置–&gt;分区终结扇区输入+49G，代表起始扇区往后数49G的扇区，意味给分区分配49G。<br>此分区待会制成lv时会分成给Ubuntu2的/、swap交换空间和/home对应的三个lv分区，此时先成一个就好,但需将分区类型标志改成LVM。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image10.png" alt=""></p><p>输入t改变分区标志–&gt;分区号为6–&gt;输入L查找代表LVM的代码–&gt;查得30代表LVM，输入30，修改标志成功。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image11.png" alt=""></p><p>输入n新建另一个分区(sdb7)对应给Ubuntu2的/boot，分配剩下的1G给此分区，此分区不需要改成LVM，不改标志。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image12.png" alt=""></p><p>输入p查看分区是否正确，确认无误后输入w写入并退出fdisk。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image13.png" alt=""></p><p>终端输入partprobe更新分区信息。再输入fdisk -l /dev/sdb查看分区创建成功否。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image14.png" alt=""></p><h3 id="四、创建PV、VG、LV"><a href="#四、创建PV、VG、LV" class="headerlink" title="四、创建PV、VG、LV"></a>四、创建PV、VG、LV</h3><p>终端输入pvcreate /dev/sdb6创建pv，输入pvscan查看目前有哪些pv检查创建成功否。<br>终端输入vgcreate hgneer1 /dev/sdb6创建名字为hgneer1（随自己定义的名字）的vg，输入vgscan查看目前有哪些pv检查创建成功否。<br>终端输入lvcreate -L +25G -n root hgneer1（刚才创建的vg），表示创建一个大小为25G的/dev/mapper/hgneer1-root的lv分区，预定作为Ubuntu2的/对应的分区。<br>终端输入lvcreate -L +8G -n swap hgneer1（刚才创建的vg），表示创建一个大小为8G的/dev/mapper/hgneer1-swap的lv分区，预定作为Ubuntu2的swap交换空间对应的分区。<br>终端输入lvcreate -L +16G -n home hgneer1（刚才创建的vg），表示创建一个大小为16G的/dev/mapper/hgneer1-home的lv分区，预定作为Ubuntu2的/home对应的分区。<br>终端输入lvscan检查所需lv创建成功否。确认无误后，lvm分区真正创建。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image15.png" alt=""></p><h3 id="五、重装系统"><a href="#五、重装系统" class="headerlink" title="五、重装系统"></a>五、重装系统</h3><p>点击桌面上的“install Ubuntu16.04.3 LTS”开始安装<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image16.png" alt=""></p><p><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image17.png" alt=""><br>安装时选择其他选项，自行分区选择调整。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image18.png" alt=""><br>/dev/mapper/hgneer1-home分区挂载到/home目录，选中格式化成Ext4日志文件系统<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image19.png" alt=""><br>/dev/mapper/hgneer1-root分区挂载到/目录，选中格式化成Ext4日志文件系统<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image20.png" alt=""><br>/dev/mapper/hgneer1-swap分区作为swap交换空间<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image21.png" alt=""><br>/dev/sdb7分区挂载到/boot目录，选中格式化成Ext4日志文件系统<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image22.png" alt=""><br>另外注意安装启动引导器的设备选择挂载到/boot目录的/dev/sdb7，否则很可能无法引导出Linux系统！！！<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image23.png" alt=""></p><p>等待安装成功后，先不要重启，继续试用，看新装上的系统Ubuntu2是否使用了LVM。<br>终端输入mount /dev/mapper/hgneer-root /mnt挂载Ubuntu2的/到试用系统的/mnt。<br>终端输入mount /dev/mapper/hgneer-home /mnt/home挂载Ubuntu2的/home到试用系统的/mnt/home。<br>终端输入mount /dev/sdb7 /mnt挂载Ubuntu2的/boot到试用系统的/mnt/boot。<br>cd到上面几个目录下看下，确定不为空系统成功装上后终端输入chroot /mnt将/mnt改成根目录，而后关机。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image24.png" alt=""></p><h3 id="六、恢复数据及配置"><a href="#六、恢复数据及配置" class="headerlink" title="六、恢复数据及配置"></a>六、恢复数据及配置</h3><p>重启进入Ubuntu2系统。将/etc/fstab文件及/boot目录备份到挂载了/dev/sdb1的/tmp的back文件夹中。<br>这些文件记载了Ubuntu2的启动信息以及Ubuntu2各重要目录所在的分区信息，<br>这些文件与Ubuntu1不一样的因此在之后解压备份文件后需要把这些文件替换到对应目录下。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image26.png" alt=""></p><p>  重启进入liveCD（U盘启动盘试用）。照前文一样命令获取试用系统的root权限。<br>  终端输入mount /dev/mapper/hgneer-root /mnt挂载Ubuntu2的/到试用系统的/mnt。<br>  终端输入mount /dev/mapper/hgneer-home /mnt/home挂载Ubuntu2的/home到试用系统的/mnt/home。<br>  终端输入mount /dev/sdb7 /mnt/boot挂载Ubuntu2的/boot到试用系统的/mnt/boot。<br>  cd到/mnt目录后，终端输入ls | xargs rm -rf，删除Ubuntu2系统根目录下的全部目录及文件。<br>  终端输入mount /dev/sdb1 /tmp挂载D盘到/tmp目录，cd到/tmp/back后终端输入tar -xvpf back.tgz -C /mnt。<br>  最终目的将Ubuntu1的备份下数据文件解压到/mnt即Ubuntu2的根目录下。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image27.png" alt=""></p><p><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image28.png" alt=""></p><p>等到解压完成后cd到/mnt后，终端输入mkdir proc lost+found tmp sys media，创建Ubuntu1备份时未选中的目录。<br>将备份在设备/dev/sdb1即现挂载在/tmp目录下的back文件夹中的fstab拷贝替换到/mnt/etc目录下。<br>将备份在设备/dev/sdb1即现挂载在/tmp目录下的back文件夹中的/boot文件夹中的文件拷贝到/mnt/boot目录下。<br>终端输入chroot /mnt转换/mnt当作根目录。<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image29.png" alt=""><br>重启进入Ubuntu2，根目录可扩容且用户数据配置与Ubuntu1完全一致的Linux系统完成！<br><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Ubuntu16.04%E5%A4%87%E4%BB%BD%E9%87%8D%E8%A3%85%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%8F%AF%E6%89%A9%E5%AE%B9LVM%E6%96%B9%E5%BC%8FLinux%E7%B3%BB%E7%BB%9F/image30.png" alt=""></p>]]></content>
     
@@ -171,16 +185,16 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://AIpynux.github.io/categories/Linux/"/>
     
-      <category term="Ubuntu" scheme="http://yoursite.com/categories/Linux/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://AIpynux.github.io/categories/Linux/Ubuntu/"/>
     
-      <category term="磁盘阵列" scheme="http://yoursite.com/categories/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/"/>
+      <category term="磁盘阵列" scheme="https://AIpynux.github.io/categories/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/"/>
     
-      <category term="lvm" scheme="http://yoursite.com/categories/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/lvm/"/>
+      <category term="LVM" scheme="https://AIpynux.github.io/categories/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/LVM/"/>
     
     
-      <category term="Ubuntu" scheme="http://yoursite.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://AIpynux.github.io/tags/Ubuntu/"/>
     
   </entry>
   
