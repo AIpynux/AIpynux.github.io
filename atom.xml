@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>红发</title>
+  <title>红发の博客</title>
   
   <subtitle>常怀敬畏之心</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://AIpynux.github.io/</id>
   
   <author>
-    <name>AIpynux</name>
+    <name>红发</name>
     
   </author>
   
