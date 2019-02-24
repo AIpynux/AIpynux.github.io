@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="Git命令行使用笔记"><meta name="keywords" content="Git"><meta name="author" content="红发,undefined"><meta name="copyright" content="红发"><meta name="google-site-verification" content="2qD2H53mq7Q4fWHTe_H9huItL7XaHmouHFJTHndTAPw"><meta name="baidu-site-verification" content="ZHTWfF4ogJ"><meta name="msvalidate.01" content="C180334B457FBE8FF36C78400C2C216E"><title>Git命令行使用笔记 | 红发</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.5.6"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/gh/upupming/gitalk@36368e5dffd049e956cdbbd751ff96c28d8255cf/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh"><span class="toc-number">1.</span> <span class="toc-text">ssh</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-clone-git-init"><span class="toc-number">2.</span> <span class="toc-text">git clone/git init</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-remote"><span class="toc-number">3.</span> <span class="toc-text">git remote</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-fetch"><span class="toc-number">4.</span> <span class="toc-text">git fetch</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-pull"><span class="toc-number">5.</span> <span class="toc-text">git pull</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-push"><span class="toc-number">6.</span> <span class="toc-text">git push</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-tag"><span class="toc-number">7.</span> <span class="toc-text">git tag</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-log"><span class="toc-number">8.</span> <span class="toc-text">git log</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-branch"><span class="toc-number">9.</span> <span class="toc-text">git branch</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-commit"><span class="toc-number">10.</span> <span class="toc-text">git commit</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#撤销"><span class="toc-number">11.</span> <span class="toc-text">撤销</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://github.com/AIpynux/Resource_of_Blogs/raw/master/Avatar/Avatar.jpg"></div><div class="author-info__name text-center">红发</div><div class="author-info__description text-center">学习Java后端开发中</div><div class="follow-button"><a href="https://github.com/AIpynux" target="_blank">关注我</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">8</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">6</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">9</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container" style="background-image: url(true)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">红发</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a><a class="site-page" href="/">主页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a><a class="site-page" href="/about">关于</a></span></div><div id="post-info"><div id="post-title">Git命令行使用笔记</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-02-24</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/编码笔记/">编码笔记</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">923</span><span class="post-meta__separator">|</span><span>阅读时长: 3 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h1 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h1><ul>
+<li>debug1: Trying private key: /home/hgneer/.ssh/id_dsa</li>
+<li>debug1: Trying private key: /home/hgneer/.ssh/id_ecdsa</li>
+<li>debug1: Trying private key: /home/hgneer/.ssh/id_ed25519</li>
+<li>重新创建ssh秘钥文件时一定注意公钥一般会发生变化，<br>此时记得给Github添加公钥，避免不必要的麻烦。</li>
+<li>DSA用在Github的SSH不行。<h1 id="git-clone-git-init"><a href="#git-clone-git-init" class="headerlink" title="git clone/git init"></a>git clone/git init</h1><ul>
+<li>如果用Github托管的话，一般先去Github建立Repository然后在自己主机clone会方便些；<br>用git init的话在git remote添加远程主机地址时就要去创建Github的Repository来充当地址。</li>
+<li>虽然Git本身支持多种协议的远程主机地址，且通常使用git协议的地址速度最快，<br>但是Github代码托管平台却只提供https和ssh协议的地址。<h1 id="git-remote"><a href="#git-remote" class="headerlink" title="git remote"></a>git remote</h1></li>
+</ul>
+</li>
+<li>可以修改.git中的config文件来改变远程主机地址，<br>但是注意Github上只有Public的Repository才能使用git协议的地址作为Git的远程主机地址。</li>
+<li>自己添加远程主机的名字最好不要写成origin。</li>
+<li>注意从远程主机clone下来后默认远程主机名是origin，可以用git clone -o &lt;想要的主机名&gt; 主机地址。<h1 id="git-fetch"><a href="#git-fetch" class="headerlink" title="git fetch"></a>git fetch</h1></li>
+<li>git fetch &lt;远程主机名&gt; &lt;远程分支名&gt;</li>
+<li>fetch得到的分支在Repository，<br>之后通过checkout创建一个本地分支或者merge得到的分支或者rebase得到的分支</li>
+<li>git merge是合并分支到当前分支，不管是本地分支还是远程分支</li>
+<li>git rebase暂时不要用，留到后面理解，rebase是一种合并方式?<h1 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a>git pull</h1></li>
+<li>取回远程分支的更新再与本地某分支合并</li>
+<li>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;  : &lt;本地分支名&gt;</li>
+<li>相当于git fetch + git merge</li>
+<li>-p可以使得在本地删除远程已删除的分支</li>
+<li>git pull &lt;远程主机名&gt;表示与本分支的追踪分支进行更新及合并<h1 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h1></li>
+<li>把本地的更新推送到远程并合并</li>
+<li>git push &lt;远程主机名&gt; &lt;本地分支名&gt; : &lt;远程分支名&gt; (&lt;来源地&gt; : &lt;目的地&gt;)</li>
+<li>省掉远程分支名则表示与追踪分支保持一致来推送</li>
+<li>省掉本地分支名则表示推送一个空分支到远程分支，效果是删除远程分支</li>
+<li>当本地分支与多个远程主机存在追踪关系可以用-u来选择默认远程主机</li>
+<li>推送程度:simple(当前分支)、matching(所有对应远程分支的本地分支)、all（所有分支）</li>
+<li>如果远程分支比本地分支新，git push 之前一般需要 git pull</li>
+<li>git push不会推送tags，除非加上–tags</li>
+<li>before git push,git fetch first and then git merge,or JUST git pull –rebase.<h1 id="git-tag"><a href="#git-tag" class="headerlink" title="git tag"></a>git tag</h1></li>
+<li>标签命名与commit注释有关？<h1 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h1></li>
+<li>git log –name-status</li>
+<li>git log –author=hgneer</li>
+<li>git log –pretty=oneline</li>
+<li>git log –graph –oneline –decorate –all<h1 id="git-branch"><a href="#git-branch" class="headerlink" title="git branch"></a>git branch</h1></li>
+<li>git branch &lt;分支名&gt;是新建一个分支但不改变当前分支，<br>git checkout -b &lt;分支名&gt;是新建一个分支并切换到该分支</li>
+<li>git checkout - 切换到上一分支</li>
+<li>git branch –set-upstream-to=&lt;远程分支名&gt;是为当前分支建立追踪分支<h1 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h1></li>
+<li>git commit -v提交时显示所有diff信息在最下方</li>
+<li>git commit –amend 可以修改制定commit对应的注释<h1 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h1></li>
+</ul>
+<ol>
+<li>git log 找到你想撤销的commit_id哈希值</li>
+<li>git reset commit_id哈希值 完成Commit命令的撤销，但是不对代码修改进行撤销，  </li>
+<li>git reset –keep commit_id哈希值 重置当前HEAD为指定commit，但保持暂存区和工作区不变</li>
+<li>git reset –hard commit_id哈希值 完成撤销,同时将代码恢复到前一commit_id 对应的版本。</li>
+</ol>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">红发</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://AIpynux.github.io/2019/02/24/Git命令行使用笔记/">https://AIpynux.github.io/2019/02/24/Git命令行使用笔记/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://AIpynux.github.io" target="_blank">红发</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Git/">Git</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/2019/02/24/几个图片共享网址/"><span>几个图片共享网址</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: 'b4621291d1504458073a',
+  clientSecret: '4d6371f28956d1082d1d8450c8073485292b333e',
+  repo: 'AIpynux.github.io',
+  owner: 'AIpynux',
+  admin: 'AIpynux',
+  id: md5(decodeURI(location.pathname)),
+  language: 'zh-CN'
+})
+gitalk.render('gitalk-container')</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2019 By 红发</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.6"></script><script src="/js/fancybox.js?version=1.5.6"></script><script src="/js/sidebar.js?version=1.5.6"></script><script src="/js/copy.js?version=1.5.6"></script><script src="/js/fireworks.js?version=1.5.6"></script><script src="/js/transition.js?version=1.5.6"></script><script src="/js/scroll.js?version=1.5.6"></script><script src="/js/head.js?version=1.5.6"></script><script src="/js/search/local-search.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
